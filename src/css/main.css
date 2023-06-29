@@ -504,23 +504,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
-}
 .mt-10 {
   margin-top: 2.5rem;
 }
-.mb-20 {
-  margin-bottom: 5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .mb-7 {
   margin-bottom: 1.75rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 .mt-12 {
   margin-top: 3rem;
@@ -919,13 +919,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(247 248 252 / var(--tw-text-opacity));
 }
-.text-secondary-dark {
-  --tw-text-opacity: 1;
-  color: rgb(16 45 68 / var(--tw-text-opacity));
-}
 .text-ternary-dark {
   --tw-text-opacity: 1;
   color: rgb(30 56 81 / var(--tw-text-opacity));
+}
+.text-secondary-dark {
+  --tw-text-opacity: 1;
+  color: rgb(16 45 68 / var(--tw-text-opacity));
 }
 .text-gray-500 {
   --tw-text-opacity: 1;
