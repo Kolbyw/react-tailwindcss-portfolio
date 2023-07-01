@@ -21,7 +21,15 @@ function App() {
 			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
 				<Router>
 					<ScrollToTop />
-					<AppHeader />
+					<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+						<AppHeader />
+					</div>
+					<Home/>
+					<About/>
+					<Experience/>
+					<Projects/>
+					<Contact/>
+					{/* <AppHeader />
 					<Suspense fallback={""}>
 						<Routes>
 							<Route path="/" element={<Home />} />
@@ -34,7 +42,7 @@ function App() {
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
 						</Routes>
-					</Suspense>
+					</Suspense> */}
 					<AppFooter />
 				</Router>
 				<UseScrollToTop />

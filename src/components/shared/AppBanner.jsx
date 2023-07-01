@@ -69,9 +69,7 @@ const AppBanner = () => {
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
 				<img
-					src={
-						activeTheme === 'dark' ? developerLight : developerDark
-					}
+					src={ activeTheme === 'dark' ? developerLight : developerDark }
 					alt="Developer"
 				/>
 			</motion.div>

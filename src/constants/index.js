@@ -1,4 +1,12 @@
 // Import images
+import statefarm from '../images/company/statefarm.jpg';
+import siu from '../images/company/siu.jpg'
+import WebImage1 from '../images/web-project-1.jpg';
+import WebImage2 from '../images/web-project-2.jpg';
+import MobileImage1 from '../images/mobile-project-1.jpg';
+import MobileImage2 from '../images/mobile-project-2.jpg';
+import UIImage1 from '../images/ui-project-1.jpg';
+import UIImage2 from '../images/ui-project-2.jpg';
 import Image1 from '../images/ui-project-1.jpg';
 import Image2 from '../images/web-project-2.jpg';
 import Image3 from '../images/mobile-project-2.jpg';
@@ -13,6 +21,103 @@ import {
 	FiTwitter,
 	FiYoutube,
 } from 'react-icons/fi';
+
+export const aboutMeData = [
+	{
+		id: 1,
+		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+	},
+	{
+		id: 2,
+		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+	},
+];
+
+export const experiences = [
+	{
+		title: "Software Engineer Intern",
+		company_name: "StateFarm",
+		icon: statefarm,
+		iconBg: "#383E56",
+		date: "June 2021 - August 2021",
+		points: [
+			"• Developing a self-service Gitlab application using the MERN stack.",
+			"• Collaborating with product managers, developers, and other interns to create the application.",
+			"• Participating in code reviews, plannings, and stand-ups as part of the AGILE methodology.",
+		],
+	},
+	{
+		title: "BS in Computer Science",
+		company_name: "Southern Illinois University - Carbondale",
+		icon: siu,
+		iconBg: "#E6DEDD",
+		date: "August 2021 - Present",
+		points: [
+			"Course Work:",
+			"• Programming Distributed Applications",
+			"• Introduction to Design and Analysis of Algorithms",
+			"• Linux/Unix Programming",
+			"• Calculus 2",
+		],
+	},
+	{
+		title: "Software Engineer Intern",
+		company_name: "StateFarm",
+		icon: statefarm,
+		iconBg: "#383E56",
+		date: "May 2022 - Present",
+		points: [
+			"• Developing and maintaining web applications using a Vue.js front-end and Django framework back-end.",
+			"• Collaborating with development team to create and deliver a reliable, high-quality product.",
+			"• Implementing responsive features and pushing changes fixing user-submitted tickets.",
+			"• Utilizing Terraform to create infrastructure for an applications API using AWS resources.",
+		],
+	},
+];
+
+export const projectsData = [
+	{
+		id: 1,
+		title: 'Google Health Platform',
+		category: 'Web Application',
+		img: WebImage2,
+		ProjectHeader: {
+			title: 'Project Management UI - From Context',
+			publishDate: 'Jul 26, 2021',
+			tags: 'UI / Frontend',
+		},
+	},
+	{
+		id: 2,
+		title: 'Phoenix Digital Agency',
+		category: 'Mobile Application',
+		img: MobileImage2,
+	},
+	{
+		id: 3,
+		title: 'Project Management UI',
+		category: 'UI/UX Design',
+		img: UIImage1,
+	},
+	{
+		id: 4,
+		title: 'Cloud Storage Platform',
+		category: 'UI/UX Design',
+		img: UIImage2,
+	},
+	{
+		id: 5,
+		title: 'React Social App',
+		category: 'Mobile Application',
+		img: MobileImage1,
+	},
+	{
+		id: 6,
+		title: 'Apple Design System',
+		category: 'Web Application',
+		img: WebImage1,
+	},
+];
 
 export const singleProjectData = {
 	ProjectHeader: {
@@ -38,45 +143,6 @@ export const singleProjectData = {
 		},
 	],
 	ProjectInfo: {
-		ClientHeading: 'About Client',
-		CompanyInfo: [
-			{
-				id: 1,
-				title: 'Name',
-				details: 'Company Ltd',
-			},
-			{
-				id: 2,
-				title: 'Services',
-				details: 'UI Design & Frontend Development',
-			},
-			{
-				id: 3,
-				title: 'Website',
-				details: 'https://company.com',
-			},
-			{
-				id: 4,
-				title: 'Phone',
-				details: '555 8888 888',
-			},
-		],
-		ObjectivesHeading: 'Objective',
-		ObjectivesDetails:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
-		Technologies: [
-			{
-				title: 'Tools & Technologies',
-				techs: [
-					'HTML',
-					'CSS',
-					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
-				],
-			},
-		],
 		ProjectDetailsHeading: 'Challenge',
 		ProjectDetails: [
 			{

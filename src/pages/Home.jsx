@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import AppBanner from '../components/shared/AppBanner';
 import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
+import { AboutMeProvider } from '../context/AboutMeContext';
+import AboutMeBio from '../components/about/AboutMeBio';
 import Button from '../components/reusable/Button';
 
 const Home = () => {
@@ -9,9 +11,13 @@ const Home = () => {
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
 
-			<ProjectsProvider>
-				<ProjectsGrid></ProjectsGrid>
-			</ProjectsProvider>
+			{/* <ProjectsProvider>
+					<ProjectsGrid></ProjectsGrid>
+				</ProjectsProvider>
+				<AboutMeProvider>
+					<AboutMeBio></AboutMeBio>
+				</AboutMeProvider> */}
+
 		</div>
 	);
 };

@@ -120,6 +120,10 @@ body {
 	font-family: 'GeneralSans-Italic';
 }
 
+.object-contain{
+	border-radius: 50%;
+}
+
 @font-face {
 	font-family: 'GeneralSans-Medium';
 	src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
