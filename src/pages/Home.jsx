@@ -10,14 +10,6 @@ const Home = () => {
 	return (
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
-
-			{/* <ProjectsProvider>
-					<ProjectsGrid></ProjectsGrid>
-				</ProjectsProvider>
-				<AboutMeProvider>
-					<AboutMeBio></AboutMeBio>
-				</AboutMeProvider> */}
-
 		</div>
 	);
 };

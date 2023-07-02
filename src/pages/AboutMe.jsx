@@ -9,8 +9,11 @@ const About = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1, delay: 1 }}
 				exit={{ opacity: 0 }}
-				className="container mx-auto"
+				className="container mx-auto text-center"
 			>
+				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+					About Me
+				</p>
 				<AboutMeBio />
 			</motion.div>
 		</AboutMeProvider>

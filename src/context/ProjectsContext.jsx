@@ -9,13 +9,6 @@ export const ProjectsProvider = (props) => {
 	const [projects, setProjects] = useState(projectsData);
 	const [selectProject, setSelectProject] = useState('');
 
-	// Select projects by project category
-	const selectProjectsByCategory = projects.filter((item) => {
-		let category =
-			item.category.charAt(0).toUpperCase() + item.category.slice(1);
-		return category.includes(selectProject);
-	});
-
 	return (
 		<ProjectsContext.Provider
 			value={{
@@ -23,7 +16,6 @@ export const ProjectsProvider = (props) => {
 				setProjects,
 				selectProject,
 				setSelectProject,
-				selectProjectsByCategory,
 			}}
 		>
 			{props.children}

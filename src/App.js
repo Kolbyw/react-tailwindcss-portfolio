@@ -29,20 +29,6 @@ function App() {
 					<Experience/>
 					<Projects/>
 					<Contact/>
-					{/* <AppHeader />
-					<Suspense fallback={""}>
-						<Routes>
-							<Route path="/" element={<Home />} />
-							<Route path="projects" element={<Projects />} />
-							<Route
-								path="projects/single-project"
-								element={<ProjectSingle />}
-							/>
-							<Route path="experience" element={<Experience />} />
-							<Route path="about" element={<About />} />
-							<Route path="contact" element={<Contact />} />
-						</Routes>
-					</Suspense> */}
 					<AppFooter />
 				</Router>
 				<UseScrollToTop />

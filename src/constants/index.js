@@ -2,7 +2,9 @@
 import statefarm from '../images/company/statefarm.jpg';
 import siu from '../images/company/siu.jpg'
 import WebImage1 from '../images/web-project-1.jpg';
-import WebImage2 from '../images/web-project-2.jpg';
+import musicStreamer from '../images/musicStreamer.jpg'
+import rockPaperScissors from '../images/rockPaperScissors.jpg';
+import euplora from '../images/euplora.jpg';
 import MobileImage1 from '../images/mobile-project-1.jpg';
 import MobileImage2 from '../images/mobile-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
@@ -78,44 +80,32 @@ export const experiences = [
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
-		category: 'Web Application',
-		img: WebImage2,
-		ProjectHeader: {
-			title: 'Project Management UI - From Context',
-			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
-		},
+		title: 'Distributed System Music Streamer',
+		description: "This is a multi-threaded client/server music streaming application. This music streamer runs each client on their own seperate thread as part of a thread pool. " +
+		"These clients are all connected through the server allowing for messaging between clients. This application also has mp3 file uploading functionality giving clients the ability " + 
+		"to upload any song/sound clip they would like. All clients are able to access any song uploaded to the server.",
+		link: "https://github.com/Kolbyw/cs412-FinalProject",
+		linkType: "Github",
+		img: musicStreamer,
 	},
 	{
 		id: 2,
-		title: 'Phoenix Digital Agency',
-		category: 'Mobile Application',
-		img: MobileImage2,
+		title: 'Rock Paper Scissors App',
+		description: "This is a basic android application that I developed along with two of my brothers. This game is a basic 'Rock Paper Scissors' style game but it has two different modes. " + 
+		"One game mode is 'Easy' where the computer picks a random choice of the three options. In the 'Medium' game mode the computer will analyze your past guesses to predict your choice. " +
+		"The game also has fun animations of the chosen objects 'battling'.",
+		link: "https://play.google.com/store/apps/details?id=com.wallinsoftware.rockpaperscissors&hl=en_US&gl=US",
+		linkType: "App",
+		img: rockPaperScissors,
 	},
 	{
 		id: 3,
-		title: 'Project Management UI',
-		category: 'UI/UX Design',
-		img: UIImage1,
-	},
-	{
-		id: 4,
-		title: 'Cloud Storage Platform',
-		category: 'UI/UX Design',
-		img: UIImage2,
-	},
-	{
-		id: 5,
-		title: 'React Social App',
-		category: 'Mobile Application',
-		img: MobileImage1,
-	},
-	{
-		id: 6,
-		title: 'Apple Design System',
-		category: 'Web Application',
-		img: WebImage1,
+		title: 'Ecommerce Website',
+		description: "This is a basic ecommerce website that I developed with two of my brothers. The UI was created with React.js and the products and images were hosted remotely and pulled from an S3 bucket. " +
+		"The website is deployed using Route53 and cloudfront AWS resources. This project was my introduction to using AWS. The website is fully operational and has two products currently listed for purchase.",
+		link: "https://www.euplora.com",
+		linkType: "Website",
+		img: euplora,
 	},
 ];
 
