@@ -213,9 +213,10 @@ body {
 	@apply bg-indigo-600;
 	@apply text-white;
 	position: fixed;
-	width: 100%;
+	color: white;
+	width: 40px;
 	align-items: center;
-	height: 20px;
+	height: 50px;
 	justify-content: center;
 	z-index: 999;
 	cursor: pointer;

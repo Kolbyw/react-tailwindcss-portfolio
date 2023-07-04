@@ -27,11 +27,11 @@ import {
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+		bio: 'I am a junior at Southern Illinois University pursuing a major in computer science. I am very grateful to have multiple years of experience working as a software engineering intern at a fortune 50 company, State Farm. While working at State Farm I have vastly improved my technical skills, personal/professional skills, and have learned a number of new technologies, including AWS. I am a dedicated worker and a passionate learner and look forward to the challenges and experiences I have ahead of me.',
 	},
 	{
 		id: 2,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+		bio: 'In my free time I love hanging out with friends, playing video games, and trying new hobbies. Some of these hobbies include weight lifting, soccer, golf, disc golf, rock climbing, and even learning french!',
 	},
 ];
 
@@ -57,7 +57,7 @@ export const navLinks = [
 export const experiences = [
 	{
 		title: "Software Engineer Intern",
-		company_name: "StateFarm",
+		company_name: "State Farm",
 		icon: statefarm,
 		iconBg: "#383E56",
 		date: "June 2021 - August 2021",
@@ -83,7 +83,7 @@ export const experiences = [
 	},
 	{
 		title: "Software Engineer Intern",
-		company_name: "StateFarm",
+		company_name: "State Farm",
 		icon: statefarm,
 		iconBg: "#383E56",
 		date: "May 2022 - Present",
