@@ -1,6 +1,7 @@
 import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import { motion } from 'framer-motion';
+import { SectionWrapper } from "../hoc";
 
 const Projects = () => {
 	return (
@@ -18,4 +19,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default SectionWrapper(Projects, "projects");

@@ -1,6 +1,7 @@
 import AboutMeBio from '../components/about/AboutMeBio';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import { motion } from 'framer-motion';
+import { SectionWrapper } from "../hoc";
 
 const About = () => {
 	return (
@@ -20,4 +21,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default SectionWrapper(About, "about");

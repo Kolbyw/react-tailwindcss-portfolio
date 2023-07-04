@@ -35,6 +35,25 @@ export const aboutMeData = [
 	},
 ];
 
+export const navLinks = [
+	{
+		id: "about",
+		title: "About",
+	},
+	{
+		id: "experience",
+		title: "Experience",
+	},
+	{
+		id: "projects",
+		title: "Projects"
+	},
+	{
+		id: "contact",
+		title: "Contact",
+	},
+];
+
 export const experiences = [
 	{
 		title: "Software Engineer Intern",
@@ -82,8 +101,8 @@ export const projectsData = [
 		id: 1,
 		title: 'Distributed System Music Streamer',
 		description: "This is a multi-threaded client/server music streaming application. This music streamer runs each client on their own seperate thread as part of a thread pool. " +
-		"These clients are all connected through the server allowing for messaging between clients. This application also has mp3 file uploading functionality giving clients the ability " + 
-		"to upload any song/sound clip they would like. All clients are able to access any song uploaded to the server.",
+			"These clients are all connected through the server allowing for messaging between clients. This application also has mp3 file uploading functionality giving clients the ability " +
+			"to upload any song/sound clip they would like. All clients are able to access any song uploaded to the server.",
 		link: "https://github.com/Kolbyw/cs412-FinalProject",
 		linkType: "Github",
 		img: musicStreamer,
@@ -91,9 +110,9 @@ export const projectsData = [
 	{
 		id: 2,
 		title: 'Rock Paper Scissors App',
-		description: "This is a basic android application that I developed along with two of my brothers. This game is a basic 'Rock Paper Scissors' style game but it has two different modes. " + 
-		"One game mode is 'Easy' where the computer picks a random choice of the three options. In the 'Medium' game mode the computer will analyze your past guesses to predict your choice. " +
-		"The game also has fun animations of the chosen objects 'battling'.",
+		description: "This is a basic android application that I developed along with two of my brothers. This game is a basic 'Rock Paper Scissors' style game but it has two different modes. " +
+			"One game mode is 'Easy' where the computer picks a random choice of the three options. In the 'Medium' game mode the computer will analyze your past guesses to predict your choice. " +
+			"The game also has fun animations of the chosen objects 'battling'.",
 		link: "https://play.google.com/store/apps/details?id=com.wallinsoftware.rockpaperscissors&hl=en_US&gl=US",
 		linkType: "App",
 		img: rockPaperScissors,
@@ -102,7 +121,7 @@ export const projectsData = [
 		id: 3,
 		title: 'Ecommerce Website',
 		description: "This is a basic ecommerce website that I developed with two of my brothers. The UI was created with React.js and the products and images were hosted remotely and pulled from an S3 bucket. " +
-		"The website is deployed using Route53 and cloudfront AWS resources. This project was my introduction to using AWS. The website is fully operational and has two products currently listed for purchase.",
+			"The website is deployed using Route53 and cloudfront AWS resources. This project was my introduction to using AWS. The website is fully operational and has two products currently listed for purchase.",
 		link: "https://www.euplora.com",
 		linkType: "Website",
 		img: euplora,

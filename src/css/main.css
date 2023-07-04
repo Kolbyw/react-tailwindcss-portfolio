@@ -803,8 +803,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 .px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 5.0rem;
+  padding-right: 5.0rem;
 }
 .py-3 {
   padding-top: 0.75rem;

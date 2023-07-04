@@ -28,7 +28,7 @@ const ProjectSingle = ({ title, image, description, link, linkType, index }) => 
 		// <motion.div
 		// 	variants={fadeIn('up', 'spring', index, 0.75)}
 		// >
-		<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+		<div className="rounded-xl shadow-lg hover:shadow-xl mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 			<div>
 				<img
 					src={image}

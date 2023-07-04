@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import ContactDetails from '../components/contact/ContactDetails';
 import ContactForm from '../components/contact/ContactForm';
+import { SectionWrapper } from "../hoc";
 
 const Contact = () => {
 	return (
@@ -20,4 +21,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default SectionWrapper(Contact, "contact");

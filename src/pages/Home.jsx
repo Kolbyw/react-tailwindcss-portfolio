@@ -5,6 +5,7 @@ import { ProjectsProvider } from '../context/ProjectsContext';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import AboutMeBio from '../components/about/AboutMeBio';
 import Button from '../components/reusable/Button';
+import { SectionWrapper } from "../hoc";
 
 const Home = () => {
 	return (
@@ -14,4 +15,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default SectionWrapper(Home, "/");

@@ -1,39 +1,31 @@
-import { AnimatePresence } from 'framer-motion';
-import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
-
-const About = lazy(() => import('./pages/AboutMe'));
-const Contact = lazy(() => import('./pages/Contact.jsx'));
-const Experience = lazy(() => import('./pages/Experience.jsx'));
-const Home = lazy(() => import('./pages/Home'));
-const Projects = lazy(() => import('./pages/Projects'));
-const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
-
+import Home from './pages/Home.jsx';
+import About from './pages/AboutMe.jsx';
+import Contact from './pages/Contact.jsx';
+import Experience from './pages/Experience.jsx';
+import Projects from './pages/Projects.jsx';
 
 function App() {
 	return (
-		<AnimatePresence>
+		<Router>
 			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
-				<Router>
-					<ScrollToTop />
-					<div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-						<AppHeader />
-					</div>
-					<Home/>
-					<About/>
-					<Experience/>
-					<Projects/>
-					<Contact/>
-					<AppFooter />
-				</Router>
+				<ScrollToTop />
+				<AppHeader />
+				<Home />
+				<About />
+				<Experience />
+				<Projects />
+				<Contact />
+				<AppFooter />
 				<UseScrollToTop />
 			</div>
-		</AnimatePresence>
+		</Router >
+
 	);
 }
 
