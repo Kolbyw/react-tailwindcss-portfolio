@@ -57,12 +57,12 @@ const Experience = () => {
 	return (
 		<>
 			<motion.div className="text-center">
-				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light mt-20">
 					My Experience
 				</p>
 			</motion.div>
 
-			<div className="mt-20 flex flex-col">
+			<div className="mb-25 flex flex-col">
 				<VerticalTimeline>
 					{experiences.map((experience, index) => (
 						<ExperienceCard key={index} experience={experience} />

@@ -555,11 +555,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-6 {
   margin-bottom: 1.5rem;
 }
+.mb-25{
+  margin-bottom: 15rem;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
 .mt-20 {
   margin-top: 5rem;
+}
+.mt-50 {
+  margin-top: 15rem;
 }
 .mb-12 {
   margin-bottom: 3rem;
