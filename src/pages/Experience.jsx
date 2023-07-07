@@ -6,7 +6,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { motion } from "framer-motion";
 import { experiences } from "../constants";
-import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 
 const ExperienceCard = ({ experience }) => {
@@ -57,7 +56,7 @@ const Experience = () => {
 	return (
 		<>
 			<motion.div className="text-center">
-				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light mt-20">
+				<p className="font-general-medium text-2xl sm-text-4xl mb-1 text-ternary-dark dark-text-ternary-light mt-20">
 					My Experience
 				</p>
 			</motion.div>

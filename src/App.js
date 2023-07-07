@@ -13,7 +13,7 @@ import Projects from './pages/Projects.jsx';
 function App() {
 	return (
 		<Router>
-			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+			<div className="dark-bg-primary-dark transition duration-300">
 				<ScrollToTop />
 				<AppHeader />
 				<Home />

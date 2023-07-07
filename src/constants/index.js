@@ -1,14 +1,9 @@
 // Import images
 import statefarm from '../images/company/statefarm.jpg';
 import siu from '../images/company/siu.jpg'
-import WebImage1 from '../images/web-project-1.jpg';
 import musicStreamer from '../images/musicStreamer.jpg'
 import rockPaperScissors from '../images/rockPaperScissors.jpg';
 import euplora from '../images/euplora.jpg';
-import MobileImage1 from '../images/mobile-project-1.jpg';
-import MobileImage2 from '../images/mobile-project-2.jpg';
-import UIImage1 from '../images/ui-project-1.jpg';
-import UIImage2 from '../images/ui-project-2.jpg';
 import Image1 from '../images/ui-project-1.jpg';
 import Image2 from '../images/web-project-2.jpg';
 import Image3 from '../images/mobile-project-2.jpg';
