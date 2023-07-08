@@ -11,7 +11,7 @@ const AboutMeBio = () => {
 				<img src={profileImage} className="rounded-lg w-96 object-contain" alt="" />
 			</div>
 
-			<div className="font-general-regular w-full sm-w-3/4 text-left mb-25">
+			<div className="font-general-regular w-full sm-w-3/4 text-left mb-25 text-center">
 				{aboutMe.map((bio) => (
 					<p
 						className="mb-4 text-ternary-dark dark-text-ternary-light text-lg"

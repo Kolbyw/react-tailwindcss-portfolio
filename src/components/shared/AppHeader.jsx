@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
+import React, { useState } from "react";
+import { FiMenu, FiX } from 'react-icons/fi';
 import logoLight from '../../images/logo-light.jpg';
 import { navLinks } from '../../constants';
 import { styles } from "../../styles";
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
-	const [scrolled, setScrolled] = useState(false);
 
 	function toggleMenu() {
 		if (!showMenu) {
@@ -16,45 +15,14 @@ const AppHeader = () => {
 		}
 	}
 
-	useEffect(() => {
-		const handleScroll = () => {
-			const scrollTop = window.scrollY;
-			if (scrollTop > 100) {
-				setScrolled(true);
-			} else {
-				setScrolled(false);
-			}
-		};
-
-		window.addEventListener("scroll", handleScroll);
-
-		const navbarHighlighter = () => {
-			const sections = document.querySelectorAll("section[id]");
-
-			sections.forEach((current) => {
-				const sectionId = current.getAttribute("id");
-				const sectionHeight = current.offsetHeight;
-				const sectionTop =
-					current.getBoundingClientRect().top - sectionHeight * 0.2;
-			});
-		};
-
-		window.addEventListener("scroll", navbarHighlighter);
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-			window.removeEventListener("scroll", navbarHighlighter);
-		};
-	}, []);
-
 	return (
 		<nav
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			id="nav"
 			className={`${styles.paddingX
-				} w-full flex items-center py-5 fixed z-20 ${scrolled ? "dark-bg-primary-dark" : "bg-transparent"
-				}`}
+				} w-full flex items-center py-5 fixed z-20 dark-bg-primary-dark
+				`}
 		>
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 				{/* Header menu links and small screen hamburger menu */}
