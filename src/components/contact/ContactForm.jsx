@@ -8,12 +8,14 @@ const ContactForm = () => {
 	const [form, setForm] = useState({
 		name: "",
 		email: "",
+		subject: "",
 		message: "",
 	});
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setForm({ ...form, [name]: value });
+		console.log("updated");
 	};
 
 	const handleSubmit = (e) => {
@@ -22,7 +24,7 @@ const ContactForm = () => {
 		emailjs
 			.send(
 				"service_3ql33we",
-				"template_1t76uxq",
+				"template_0id40pl",
 				{
 					from_name: form.name,
 					to_name: "Kolby",
@@ -63,36 +65,60 @@ const ContactForm = () => {
 					<p className="font-general-medium text-primary-dark dark-text-primary-light text-2xl mb-8">
 						Contact Form
 					</p>
-					<FormInput
-						inputLabel="Full Name"
-						labelFor="name"
-						inputType="text"
-						inputId="name"
-						onChange={handleChange}
-						inputName="name"
-						placeholderText="Your Name"
-						ariaLabelName="Name"
-					/>
-					<FormInput
-						inputLabel="Email"
-						labelFor="email"
-						inputType="email"
-						onChange={handleChange}
-						inputId="email"
-						inputName="email"
-						placeholderText="Your email"
-						ariaLabelName="Email"
-					/>
-					<FormInput
-						inputLabel="Subject"
-						labelFor="subject"
-						inputType="text"
-						onChange={handleChange}
-						inputId="subject"
-						inputName="subject"
-						placeholderText="Subject"
-						ariaLabelName="Subject"
-					/>
+					<div className="mt-6">
+						<label
+							className="block text-lg text-primary-dark dark-text-primary-light mb-2"
+							htmlFor="name"
+						>
+							Name
+						</label>
+						<textarea
+							className="w-full px-5 py-2 border border-gray-300 dark-border-primary-dark border-opacity-50 text-primary-dark dark-text-secondary-light bg-ternary-light dark-bg-ternary-dark rounded-md shadow-sm text-md"
+							id="name"
+							name="name"
+							onChange={handleChange}
+							cols="14"
+							placeholder="Your Name"
+							rows="1"
+							aria-label="name"
+						></textarea>
+					</div>
+					<div className="mt-6">
+						<label
+							className="block text-lg text-primary-dark dark-text-primary-light mb-2"
+							htmlFor="email"
+						>
+							Email
+						</label>
+						<textarea
+							className="w-full px-5 py-2 border border-gray-300 dark-border-primary-dark border-opacity-50 text-primary-dark dark-text-secondary-light bg-ternary-light dark-bg-ternary-dark rounded-md shadow-sm text-md"
+							id="email"
+							name="email"
+							onChange={handleChange}
+							cols="14"
+							placeholder="Your Email"
+							rows="1"
+							aria-label="email"
+						></textarea>
+					</div>
+					<div className="mt-6">
+						<label
+							className="block text-lg text-primary-dark dark-text-primary-light mb-2"
+							htmlFor="subject"
+						>
+							Subject
+						</label>
+						<textarea
+							className="w-full px-5 py-2 border border-gray-300 dark-border-primary-dark border-opacity-50 text-primary-dark dark-text-secondary-light bg-ternary-light dark-bg-ternary-dark rounded-md shadow-sm text-md"
+							id="subject"
+							name="subject"
+							onChange={handleChange}
+							cols="14"
+							placeholder="Subject"
+							rows="1"
+							aria-label="subject"
+						></textarea>
+					</div>
 					<div className="mt-6">
 						<label
 							className="block text-lg text-primary-dark dark-text-primary-light mb-2"
