@@ -14,43 +14,53 @@ const ContactForm = () => {
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setForm({ ...form, [name]: value });
-		console.log("updated");
 	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		emailjs
-			.send(
-				"service_3ql33we",
-				"template_0id40pl",
-				{
-					from_name: form.name,
-					to_name: "Kolby",
-					from_email: form.email,
-					to_email: "kolbywallin@gmail.com",
-					subject: form.subject,
-					message: form.message,
-				},
-				"n1B0enxCb91h9bDa3"
-			)
-			.then(
-				() => {
-					alert("Thank you. I will get back to you as soon as possible.");
+		console.log("Name" + form.name);
+		console.log("Email" + form.email);
+		console.log("Subject" + form.subject);
+		console.log("Message" + form.message);
 
-					setForm({
-						name: "",
-						email: "",
-						subject: "",
-						message: "",
-					});
-				},
-				(error) => {
+		setForm({
+			name: "",
+			email: "",
+			subject: "",
+			message: "",
+		});
+		// emailjs
+		// 	.send(
+		// 		"service_3ql33we",
+		// 		"template_0id40pl",
+		// 		{
+		// 			from_name: form.name,
+		// 			to_name: "Kolby",
+		// 			from_email: form.email,
+		// 			to_email: "kolbywallin@gmail.com",
+		// 			subject: form.subject,
+		// 			message: form.message,
+		// 		},
+		// 		"n1B0enxCb91h9bDa3"
+		// 	)
+		// 	.then(
+		// 		() => {
+		// 			alert("Thank you. I will get back to you as soon as possible.");
 
-					console.log(error);
-					alert("Something went wrong.");
-				}
-			);
+		// 			setForm({
+		// 				name: "",
+		// 				email: "",
+		// 				subject: "",
+		// 				message: "",
+		// 			});
+		// 		},
+		// 		(error) => {
+
+		// 			console.log(error);
+		// 			alert("Something went wrong.");
+		// 		}
+		// 	);
 	};
 
 	return (
@@ -75,6 +85,7 @@ const ContactForm = () => {
 							className="w-full px-5 py-2 border border-gray-300 dark-border-primary-dark border-opacity-50 text-primary-dark dark-text-secondary-light bg-ternary-light dark-bg-ternary-dark rounded-md shadow-sm text-md"
 							id="name"
 							name="name"
+							value={form.name}
 							onChange={handleChange}
 							cols="14"
 							placeholder="Your Name"
@@ -93,6 +104,7 @@ const ContactForm = () => {
 							className="w-full px-5 py-2 border border-gray-300 dark-border-primary-dark border-opacity-50 text-primary-dark dark-text-secondary-light bg-ternary-light dark-bg-ternary-dark rounded-md shadow-sm text-md"
 							id="email"
 							name="email"
+							value={form.email}
 							onChange={handleChange}
 							cols="14"
 							placeholder="Your Email"
@@ -111,6 +123,7 @@ const ContactForm = () => {
 							className="w-full px-5 py-2 border border-gray-300 dark-border-primary-dark border-opacity-50 text-primary-dark dark-text-secondary-light bg-ternary-light dark-bg-ternary-dark rounded-md shadow-sm text-md"
 							id="subject"
 							name="subject"
+							value={form.subject}
 							onChange={handleChange}
 							cols="14"
 							placeholder="Subject"
@@ -129,6 +142,7 @@ const ContactForm = () => {
 							className="w-full px-5 py-2 border border-gray-300 dark-border-primary-dark border-opacity-50 text-primary-dark dark-text-secondary-light bg-ternary-light dark-bg-ternary-dark rounded-md shadow-sm text-md"
 							id="message"
 							name="message"
+							value={form.message}
 							onChange={handleChange}
 							cols="14"
 							placeholder="What do you want to say?"
