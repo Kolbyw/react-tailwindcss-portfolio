@@ -1,7 +1,6 @@
 import {
 	FiGithub,
 	FiLinkedin,
-	FiInstagram,
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 
@@ -15,11 +14,6 @@ const socialLinks = [
 		id: 2,
 		icon: <FiLinkedin />,
 		url: 'https://www.linkedin.com/in/kolby-wallin/',
-	},
-	{
-		id: 3,
-		icon: <FiInstagram />,
-		url: 'https://www.Instagram.com/kolby.wallin',
 	},
 ];
 
