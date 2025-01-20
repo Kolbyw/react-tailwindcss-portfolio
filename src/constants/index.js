@@ -4,7 +4,7 @@ import siu from '../images/company/siu.jpg'
 import musicStreamer from '../images/musicStreamer.jpg'
 import rockPaperScissors from '../images/rockPaperScissors.jpg';
 import euplora from '../images/euplora.jpg';
-import iris from '../images/Iris.jpg';
+import iris from '../images/Iris.JPG';
 
 export const aboutMeData = [
 	{
@@ -97,18 +97,14 @@ export const projectsData = [
 		title: 'Ecommerce Website',
 		description: "This is a basic ecommerce website that I developed with two of my brothers. The UI was created with React.js and the products and images were hosted remotely and pulled from an S3 bucket. " +
 			"The website is deployed using Route53 and cloudfront AWS resources. This project was my introduction to using AWS. The website is fully operational and has two products currently listed for purchase.",
-		link: "https://www.euplora.com",
-		linkType: "Website",
 		img: euplora,
 	},
 	{
 		id: 2,
-		title: 'Distributed System Music Streamer',
-		description: "This is a multi-threaded client/server music streaming application. This music streamer runs each client on their own seperate thread as part of a thread pool. " +
+		title: 'Distributed Music Streamer',
+		description: "This is a multi-threaded client/server music streaming application. " +
 			"These clients are all connected through the server allowing for messaging between clients. This application also has mp3 file uploading functionality giving clients the ability " +
 			"to upload any song/sound clip they would like. All clients are able to access any song uploaded to the server.",
-		link: "https://github.com/Kolbyw/cs412-FinalProject",
-		linkType: "Github",
 		img: musicStreamer,
 	},
 	{
@@ -116,8 +112,6 @@ export const projectsData = [
 		title: 'Iris Classifier',
 		description: "This is a machine learning project that aims to classify the family of iris given instances with 4 features. The features being petal length, petal width, sepal length, and sepal width. " +
 		"I used four different types of classifiers in this project to try and achieve the best results, I used: Perceptron, kNN, Decision Tree, and SVM. The results showed that ",
-		link: "https://github.com/Kolbyw/cs412-FinalProject",
-		linkType: "Github",
 		img: iris,
 	},
 	{
@@ -126,8 +120,6 @@ export const projectsData = [
 		description: "This is a basic android application that I developed along with two of my brothers. This game is a basic 'Rock Paper Scissors' style game but it has two different modes. " +
 			"One game mode is 'Easy' where the computer picks a random choice of the three options. In the 'Medium' game mode the computer will analyze your past guesses to predict your choice. " +
 			"The game also has fun animations of the chosen objects 'battling'.",
-		link: "https://play.google.com/store/apps/details?id=com.wallinsoftware.rockpaperscissors&hl=en_US&gl=US",
-		linkType: "App",
 		img: rockPaperScissors,
 	},
 ];

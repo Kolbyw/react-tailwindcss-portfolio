@@ -15,15 +15,13 @@ const ProjectsGrid = () => {
 				</p>
 			</div>
 
-			<div className="grid grid-cols-1 sm-grid-cols-2 lg-grid-cols-3 mt-6 sm-gap-10">
+			<div className="grid grid-cols-1 sm-grid-cols-2 lg-grid-cols-4 mt-6 sm-gap-10">
 				{
 					projects.map((project) => (
 						<ProjectSingle
 							title={project.title}
 							image={project.img}
 							description={project.description}
-							link={project.link}
-							linkType={project.linkType}
 							key={project.id}
 						/>
 					))}
